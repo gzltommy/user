@@ -1,3 +1,5 @@
-FROM alpine
-ADD user-service /user-service
-ENTRYPOINT [ "/user-service" ]
+#FROM alpine
+#FROM scratch
+FROM ubuntu:18.04
+COPY user /user
+ENTRYPOINT [ "/user" ]
